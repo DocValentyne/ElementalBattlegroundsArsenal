@@ -1,0 +1,7 @@
+<Project>
+  <PropertyGroup>
+    <ManagedDir>C:\Program Files (x86)\Steam\steamapps\common\ULTRAKILL\ULTRAKILL_Data\Managed</ManagedDir>
+    <BepInExCoreDir>C:\Program Files (x86)\Steam\steamapps\common\ULTRAKILL\BepInEx\core</BepInExCoreDir>
+    <PluginConfiguratorDll>C:\Program Files (x86)\Steam\steamapps\common\ULTRAKILL\BepInEx\plugins\PluginConfigurator\PluginConfigurator.dll</PluginConfiguratorDll>
+  </PropertyGroup>
+</Project>

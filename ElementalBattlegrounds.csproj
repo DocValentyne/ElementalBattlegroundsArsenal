@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <AssemblyName>ElementalBattlegrounds</AssemblyName>
+    <RootNamespace>ElementalBattlegroundsMod</RootNamespace>
+    <Version>0.1.0</Version>
+    <ManagedDir Condition="'$(ManagedDir)' == ''">$(MSBuildThisFileDirectory)..\eb_managed\Managed</ManagedDir>
+    <BepInExCoreDir Condition="'$(BepInExCoreDir)' == ''">$(MSBuildThisFileDirectory)..</BepInExCoreDir>
+    <PluginConfiguratorDll Condition="'$(PluginConfiguratorDll)' == ''">$(MSBuildThisFileDirectory)..\PluginConfigurator.dll</PluginConfiguratorDll>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp" HintPath="$(ManagedDir)\Assembly-CSharp.dll" Private="false" />
+    <Reference Include="UnityEngine" HintPath="$(ManagedDir)\UnityEngine.dll" Private="false" />
+    <Reference Include="UnityEngine.CoreModule" HintPath="$(ManagedDir)\UnityEngine.CoreModule.dll" Private="false" />
+    <Reference Include="UnityEngine.PhysicsModule" HintPath="$(ManagedDir)\UnityEngine.PhysicsModule.dll" Private="false" />
+    <Reference Include="UnityEngine.AudioModule" HintPath="$(ManagedDir)\UnityEngine.AudioModule.dll" Private="false" />
+    <Reference Include="UnityEngine.ImageConversionModule" HintPath="$(ManagedDir)\UnityEngine.ImageConversionModule.dll" Private="false" />
+    <Reference Include="UnityEngine.JSONSerializeModule" HintPath="$(ManagedDir)\UnityEngine.JSONSerializeModule.dll" Private="false" />
+    <Reference Include="UnityEngine.AssetBundleModule" HintPath="$(ManagedDir)\UnityEngine.AssetBundleModule.dll" Private="false" />
+    <Reference Include="UnityEngine.AnimationModule" HintPath="$(ManagedDir)\UnityEngine.AnimationModule.dll" Private="false" />
+    <Reference Include="UnityEngine.ParticleSystemModule" HintPath="$(ManagedDir)\UnityEngine.ParticleSystemModule.dll" Private="false" />
+    <Reference Include="UnityEngine.UIModule" HintPath="$(ManagedDir)\UnityEngine.UIModule.dll" Private="false" />
+    <Reference Include="UnityEngine.TextRenderingModule" HintPath="$(ManagedDir)\UnityEngine.TextRenderingModule.dll" Private="false" />
+    <Reference Include="UnityEngine.UI" HintPath="$(ManagedDir)\UnityEngine.UI.dll" Private="false" />
+    <Reference Include="Unity.TextMeshPro" HintPath="$(ManagedDir)\Unity.TextMeshPro.dll" Private="false" />
+    <Reference Include="Unity.Addressables" HintPath="$(ManagedDir)\Unity.Addressables.dll" Private="false" />
+    <Reference Include="Unity.ResourceManager" HintPath="$(ManagedDir)\Unity.ResourceManager.dll" Private="false" />
+    <Reference Include="BepInEx" HintPath="$(BepInExCoreDir)\BepInEx.dll" Private="false" />
+    <Reference Include="0Harmony" HintPath="$(BepInExCoreDir)\0Harmony.dll" Private="false" />
+    <Reference Include="PluginConfigurator" HintPath="$(PluginConfiguratorDll)" Private="false" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\*.png">
+      <LogicalName>ElementalBattlegroundsMod.element.%(Filename)</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="icon.png" LogicalName="ElementalBattlegroundsMod.icon.png" />
+  </ItemGroup>
+</Project>

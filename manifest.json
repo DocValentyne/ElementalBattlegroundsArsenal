@@ -1,0 +1,12 @@
+{
+  "name": "Elemental_Battlegrounds_Arsenal",
+  "version_number": "0.1.0",
+  "website_url": "https://github.com/DocValentyne/ElementalBattlegroundsArsenal",
+  "description": "Elemental Battlegrounds Arsenal 0.1.0: a 15-slot element loadout system with six selectable elements and supported custom-element API v1.",
+  "dependencies": [
+    "BepInEx-BepInExPack-5.4.2305",
+    "EternalsTeam-PluginConfigurator-1.10.2",
+    "TheAliMods-ConductionFix-1.0.0",
+    "DocValentyne-Grenade_Launcher-2.0.2"
+  ]
+}
